@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { DropdownModule } from 'primeng/dropdown';
+import { DropdownModule } from './dropdown';
 
 @Component({
 	selector: 'app-root',
