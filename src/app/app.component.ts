@@ -1,11 +1,19 @@
 import { Component } from '@angular/core';
-import { OverlayModule } from 'primeng/overlay';
+import { OverlayModule } from './overlay';
 
 @Component({
 	selector: 'app-root',
 	standalone: true,
 	imports: [ OverlayModule ],
-	templateUrl: './app.component.html'
+	template:
+	`
+		@if (true) {
+			<form>
+				<input id="host" />
+				<p-overlay></p-overlay>
+			</form>
+		}
+	`
 })
 export class AppComponent {
 }
